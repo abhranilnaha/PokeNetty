@@ -463,7 +463,7 @@ if __name__ == '__main__':
                 login = True
                 whoAmI = result.body.job_status.data[0].owner_id
     while True:
-        input = raw_input("\nPlease select your desirable action:\n0.Quit\n1.Get a course description\n2.List all courses being offered\n3.Ask a question\n4.See all posted questions\n5.Answer a Question\n6.See all posted answers\n")
+        input = raw_input("\nPlease select your desirable action:\n0.Quit\n1.Get a course description\n2.List all courses being offered\n3.Ask a question\n4.See all posted questions\n5.Answer a Question\n6.See all posted answers\n7.Print data from inter cluster\n")
         if input == "1":
             courseName = raw_input("Course Name:")
             courseDescJob = buildCourseDescJob(courseName, whoAmI)

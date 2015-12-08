@@ -42,6 +42,8 @@ public class JobResource implements Resource {
 		System.out.println("Entered Job Resource");
 		Request.Builder requestBuilder = Request.newBuilder().setHeader(request.getHeader());
 		JobDesc.Builder jobDescBuilder = JobDesc.newBuilder();
+		
+		System.out.println("Received request from client for namespace: " + nameSpace);
 
 		if (nameSpace.equals("sign_up")) {
 			// sign up logic
@@ -237,7 +239,8 @@ public class JobResource implements Resource {
 		payloadBuilder.setJobStatus(jobStatusBuilder);
 		requestBuilder.setBody(payloadBuilder);
 
-
+		System.out.println("Response is: " + request.getBody());
+		
 		return requestBuilder.build();
 	}
 
