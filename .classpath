@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="generated"/>
-	<classpathentry excluding="poke/server/election/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="lib" path="lib/bonecp-0.7.1.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
